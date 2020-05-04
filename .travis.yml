@@ -39,7 +39,7 @@ install:
 
 script:
     - platformio run
-
+    - "/bin/bash ./scripts/webhook.sh"  # this means we will run the script "scripts/webhook.sh"
 
 #
 # Template #2: The project is intended to be used as a library with examples.
