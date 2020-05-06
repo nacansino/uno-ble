@@ -23,7 +23,7 @@
   Hardware Connections:
   DSD-Tech HM-19 ------------------- Arduino Uno
        GND ----------------------------- GND
-       3.3V ---------------------------- 5V
+       VCC ----------------------------- 5V
        TX ------------------------------ 3
        RX ------------------------------ 4
 */
@@ -51,7 +51,7 @@ void setup() {
   // a desired serial baud rate.
   // Returns true on success
   if (bt.begin(btSerial, 9600) == false) {
-    Serial.println(F("Failed to connect to the HM-15."));
+    Serial.println(F("Failed to connect to the HM-19."));
     while (1) ;
   }
   Serial.println("Ready to Bluetooth!");
